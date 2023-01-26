@@ -17,7 +17,7 @@ elastic-config:
 
 user-config:
   username: test
-  password: ENC(jTycxuxkkuKaaCGM1h8L8c8IdfIKZ1lqOTEBh7n6BVmwZ0PPCux4iQpv30qXm3TE)
+  password: qwerty@123
   roles: USER
 
 springdoc:
