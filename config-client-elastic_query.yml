@@ -27,7 +27,4 @@ springdoc:
     path: /swagger-ui.html
 
 security:
-  paths-to-ignore:
-    - /api-docs
-    - /swagger-ui/**
-    - /swagger-resources/**
+  paths-to-ignore: /api-docs/**, /swagger-ui/**, /swagger-resources/**, /swagger-ui.html, /v3/api-docs/**
