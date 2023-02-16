@@ -43,10 +43,10 @@ spring:
             scope: openid
         provider:
           keycloak:
-            issuerUri: http://localhost:7171/auth/realms/microservices
+            issuerUri: http://host.docker.internal:7171/auth/realms/microservices
 
 security:
-  logout-success-url: http://localhost:8184/elastic-query-web-client
+  logout-success-url: http://host.docker.internal:8184/elastic-query-web-client
   default-client-registration-id: keycloak
 
 user-config:
