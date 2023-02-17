@@ -34,7 +34,7 @@ spring:
             authorizationGrantType: client_credentials
         provider:
           keycloak:
-            tokenUri: http://host.docker.internal:7171/auth/realms/microservices-realm/protocol/openid-connect/token
+            tokenUri: http://host.docker.internal:7171/auth/realms/microservices/protocol/openid-connect/token
   jpa:
     open-in-view: false
     show-sql: true
