@@ -11,7 +11,7 @@ elastic-query-service:
     query-type: 'KAFKA_STATE_STORE'
     query-from-kafka-state-store:
       method: GET
-      uri: "http://localhost:8187/kafka-streams-service/get-word-count-by-word/{word}"
+      uri: "http://host.docker.internal:8187/kafka-streams-service/get-word-count-by-word/{word}"
       accept: ${elastic-query-service.webclient.accept-type}
 
 server:
@@ -34,7 +34,7 @@ spring:
             authorizationGrantType: client_credentials
         provider:
           keycloak:
-            tokenUri: http://localhost:7171/auth/realms/microservices-realm/protocol/openid-connect/token
+            tokenUri: http://host.docker.internal:7171/auth/realms/microservices-realm/protocol/openid-connect/token
   jpa:
     open-in-view: false
     show-sql: true
