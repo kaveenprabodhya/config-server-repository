@@ -65,3 +65,6 @@ retry-config:
   multiplier: 2.0
   maxAttempts: 3
   sleep-time-ms: 2000
+
+security:
+  paths-to-ignore: /api-docs/**, /swagger-ui/**, /swagger-resources/**, /swagger-ui.html, /v3/api-docs/**
